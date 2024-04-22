@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-Template</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 200px;
+      color: rgb(88, 88, 88);
+      font-size: 17px;
+      /* background-color: black; */
+      width: 220px;
+      height: 565px;
+
+    }
+
+    li {
+      /* background-color: rgb(121, 121, 162); */
+      width: 220px;
+      height: 30px;
+      padding-top: 20px;
+      padding-left: 20px;
+
+    }
+
+    h1 {
+      padding-top: 12px;
+      padding-left: 200px;
+      width: 220px;
+      height: 100px;
+      /* background-color: aquamarine; */
+
+    }
+
+    li:hover {
+      color: black;
+      background-color: rgb(162, 157, 157);
+    }
+
+    #left {
+      position: fixed;
+      display: inline-block;
+    }
+
+    nav {
+      /* background-color: beige; */
+      width: 820px;
+      height: 50px;
+      margin-left: 420px;
+      position: relative;
+      top: 20px;
+    }
+
+    nav p {
+      position: absolute;
+      /* background-color: blanchedalmond; */
+      display: inline-block;
+      width: 700px;
+      height: 0px;
+      font: 20px sans-serif;
+      top: 0px;
+    }
+
+    div.main {
+      /* background-color: black; */
+      width: 820px;
+      height: 570px;
+      margin-left: 420px;
+      margin-top: 25px;
+      position: relative;
+
+    }
+
+    p.a {
+      position: absolute;
+      color: white;
+      top: 0px;
+      left: 25px;
+      font-size: 4rem;
+    }
+
+    p.b {
+      position: absolute;
+      color: white;
+      top: 120px;
+      left: 25px;
+      font-size: 2rem;
+    }
+
+    p.hover {
+      position: absolute;
+      color: white;
+      top: 200px;
+      left: 25px;
+      font-size: 22px;
+      background-color: black;
+      padding: 12px;
+    }
+
+    p.hover:hover {
+      color: black;
+      background-color: rgb(198, 191, 191);
+    }
+
+    p.para {
+      margin-left: 420px;
+    }
+
+    div.images {
+      width: 820px;
+      height: 570px;
+      left: 420px;
+      /* background-color: rgb(225, 132, 132); */
+      display: flex;
+      flex-wrap: wrap;
+      align-content: start;
+      justify-content: start;
+      position: relative;
+
+    }
+
+    div.images img {
+      width: 175px;
+      height: 220px;
+      margin: 0px 30px 50px 0px;
+      /* padding-right: 26px;
+        padding-bottom: 20px; */
+    }
+
+    p.price1 {
+      position: absolute;
+      top: 200px;
+      padding: 10px;
+    }
+
+    p.price2 {
+      position: absolute;
+      top: 200px;
+      left: 200px;
+      padding: 10px;
+    }
+
+    p.price3 {
+      position: absolute;
+      top: 200px;
+      left: 400px;
+      padding: 10px;
+    }
+
+    p.price4 {
+      position: absolute;
+      top: 200px;
+      left: 600px;
+      padding: 10px;
+    }
+
+    p.price5 {
+      position: absolute;
+      top: 470px;
+      padding: 10px;
+    }
+
+    p.price6 {
+      position: absolute;
+      top: 470px;
+      left: 200px;
+      padding: 10px;
+    }
+
+    p.price7 {
+      position: absolute;
+      top: 470px;
+      left: 400px;
+      padding: 10px;
+    }
+
+    p.price8 {
+      position: absolute;
+      top: 470px;
+      left: 600px;
+      padding: 10px;
+    }
+
+    div.footer1 {
+      width: 820px;
+      height: 770px;
+      background-color: black;
+      margin-left: 420px;
+      position: relative;
+    }
+
+    p.foot1 {
+      font-size: 32px;
+      color: white;
+      position: absolute;
+      top: 40px;
+      margin: 20px;
+    }
+
+    p.foot2 {
+      font-size: 15px;
+      color: white;
+      position: absolute;
+      top: 100px;
+      margin: 20px;
+    }
+
+    input.input1 {
+      font-size: 15px;
+      color: white;
+      position: absolute;
+      top: 140px;
+      margin: 20px;
+      width: 94%;
+      padding: 6px;
+    }
+
+    p.foot3 {
+      font-size: 20px;
+      color: white;
+      position: absolute;
+      top: 190px;
+      margin: 20px;
+      padding: 8px;
+      background-color: red;
+    }
+
+    p.foot3:hover {
+      color: black;
+      background-color: rgb(190, 177, 177);
+    }
+
+    div.footer2 {
+      width: 820px;
+      height: 400px;
+      background-color: rgb(222, 220, 220);
+      top: 300px;
+      position: absolute;
+    }
+
+    p.contact {
+      font-size: 25px;
+      color: black;
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      margin: 20px;
+    }
+
+    p.contact2 {
+      font-size: 15px;
+      color: black;
+      position: absolute;
+      top: 90px;
+      left: 75px;
+      margin: 20px;
+    }
+
+    input.foot1 {
+      color: white;
+      position: absolute;
+      top: 120px;
+      margin: 20px;
+      width: 30%;
+      padding: 6px;
+    }
+
+    input.foot2 {
+      color: white;
+      position: absolute;
+      top: 160px;
+      margin: 20px;
+      width: 30%;
+      padding: 6px;
+    }
+
+    input.foot3 {
+      color: white;
+      position: absolute;
+      top: 200px;
+      margin: 20px;
+      width: 30%;
+      padding: 6px;
+    }
+
+    input.foot4 {
+      color: white;
+      position: absolute;
+      top: 240px;
+      margin: 20px;
+      width: 30%;
+      padding: 6px;
+    }
+
+    p.contact3 {
+      font-size: 15px;
+      color: white;
+      position: absolute;
+      top: 285px;
+      margin: 20px;
+      padding: 6px;
+      width: 30%;
+      background-color: black;
+      text-align: center;
+    }
+
+    p.contact3:hover {
+      color: black;
+      background-color: rgb(190, 177, 177);
+    }
+
+    div.footer3 {
+      position: absolute;
+      width: 100px;
+      height: 325px;
+      text-decoration-line: underline;
+      top: 342px;
+      left: 400px;
+      text-align: center;
+      font-size: small;
+    }
+
+    div.footer4 {
+      position: absolute;
+      width: 150px;
+      height: 325px;
+      top: 342px;
+      left: 600px;
+      font-size: small;
+    }
+
+    p.bottom {
+      font-size: 15px;
+      color: white;
+      position: absolute;
+      top: 710px;
+      left: 40%;
+      margin: 20px;
+    }
+  </style>
+  </head>
+
+  <body>
+    <div id="left">
+      <h1>LOGO</h1>
+      <ul>
+        <li>shirts</li>
+        <li>dresses</li>
+        <li>jeans</li>
+        <li>jackets</li>
+        <li>gym wear</li>
+        <li>blazers</li>
+        <li>shoes</li>
+        <li>contact</li>
+        <li>newsletter</li>
+        <li>subscribe</li>
+      </ul>
+    </div>
+    <nav>
+      <p>Jeans</p>
+      <img src="./cart.png" alt="cart" width="25px" height="25px"
+        style="padding: 10px; margin-left: 720px;">
+      <img src="./search bar.png" alt="search" width="25px" height="25px"
+        style="padding: 10px;">
+    </nav>
+    <div class="main">
+      <img src="./jeans.jpg" alt="img" width="820px" height="570px">
+      <p class="a">New Arrivals</p>
+      <p class="b">COLLECTION 2024</p>
+      <p class="hover">SHOP NOW</p>
+    </div>
+    <p class="para">8 items</p>
+    <div class="images">
+      <img src="./jeans1.jpg" alt="img"><br>
+      <p class="price1">Ripped Skinny Jeans <br><b>$24.99</b></p>
+      <p
+        style="background-color: black; width: 35px;height: 20px; color: white; position: absolute; z-index: 1; top: -16px; left: 205px;">
+        New</p>
+      <img src="./jeans2.jpg" alt="img">
+      <p class="price2">Mega Ripped Jeans <br><b>$19.99</b></p>
+      <img src="./jeans3.jpg" alt="img">
+      <p class="price3">Washed Skinny Jeans <br><b>$20.50</b></p>
+      <img src="./jeans4.jpg" alt="img">
+      <p class="price4">Vintage Skinny Jeans <br><b>$14.99</b></p>
+
+      <img src="./jeans2.jpg" alt="img">
+      <p class="price5">Mega Ripped Jeans <br><b>$19.99</b></p>
+      <img src="./jeans3.jpg" alt="img">
+      <p class="price6">Washed Skinny Jeans <br><b>$20.50</b></p>
+      <img src="./jeans4.jpg" alt="img">
+      <p class="price7">Vintage Skinny Jeans <br><b>$14.99</b></p>
+      <img src="./jeans1.jpg" alt="img">
+      <p class="price8">Ripped Skinny Jeans <br><b>$24.99</b></p>
+    </div>
+    <div class="footer1">
+      <p class="foot1">Subscribe</p>
+      <p class="foot2">To get special offers and VIP treatment:</p>
+      <input type="email" placeholder="Enter e-mail" class="input1">
+      <p class="foot3">Subscribe</p>
+      <div class="footer2">
+        <p class="contact">contact</p>
+        <p class="contact2">Questions? Go ahead.</p>
+        <input type="text" placeholder="Name" class="foot1">
+        <input type="email" placeholder="Email" class="foot2">
+        <input type="text" placeholder="Subject" class="foot3">
+        <input type="text" placeholder="Message" class="foot4">
+        <p class="contact3">Send</p>
+      </div>
+      <div class="footer3">
+        <p style="font-size: 25px; ">About</p>
+        <p>About us</p>
+        <p>We are hiring</p>
+        <p>Support </p>
+        <p>Find store</p>
+        <p>Shipment</p>
+        <p>Payment</p>
+        <p>Gift card</p>
+        <p>Return</p>
+        <p>Help</p>
+      </div>
+      <div class="footer4">
+        <p style="font-size: 25px;">Store </p>
+        <p><img src="./cart.png" alt="logo" width="15px"
+            height="15px">&nbsp;Company name</p>
+        <p><img src="./search bar.png" alt="logo" width="15px"
+            height="15px">&nbsp;4406747768 </p>
+        <p><img src="./cart.png" alt="logo" width="15px"
+            height="15px">&nbsp;ex@gmail.com</p>
+        <p style="font-size: 25px;">We Accept</p>
+        <p><img src="./search bar.png" alt="logo" width="15px"
+            height="15px">&nbsp;Amex</p>
+        <p><img src="./cart.png" alt="logo" width="15px"
+            height="15px">&nbsp;Credit card</p>
+
+      </div>
+      <p class="bottom">Powered by shiva chaithanya</p>
+    </div>
+
+  </body>
+
+</html>
