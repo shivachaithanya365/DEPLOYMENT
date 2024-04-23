@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-rotation</title>
+    <style>
+        table.tr,td{
+            text-align: center;
+            padding: 10px;
+            
+        }
+        table{
+            margin: center;
+            text-align: center;
+            margin-left: 33%;
+            margin-top: 4%;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width:150px ; height:150px;
+            transition: all 4s;
+            border: 2px solid rgb(0, 0, 0);
+
+        }
+        #box1 img:hover{
+            transform: rotate(360deg);
+        }
+        #box1 img{
+            border-radius: 0px;
+
+        }
+        #box2 img:hover{
+            transform: rotateX(360deg);
+        }
+        #box2 img{
+            border-radius: 100px;
+        }
+        #box3 img:hover{
+            transform: rotateY(180deg);
+        }
+        #box3 img{
+            border-radius: 20px;
+        }
+        #box4 img:hover{
+            transform: rotateZ(-360deg);
+        }
+        #box4 img{
+            border-radius: 50px;
+        }
+        #box5 img:hover{
+            transform: rotateX(-360deg);
+        }
+        #box5 img{
+            border-radius: 30px;
+        }
+        #box6 img:hover{
+            transform: rotateY(-180deg);
+        }
+        #box6 img{
+            border-radius: 90px;
+        }
+        #box7 img:hover{
+            transform: rotate(360deg);
+        }
+        #box7 img{
+            border-radius: 100px;
+            transition-delay: 1s;
+
+        }
+        #box8 img:hover{
+            transform: rotateX(360deg);
+        }
+        #box8 img{
+            border-radius: 0px;
+            transition-delay: 1s;
+
+        }
+        #box9 img:hover{
+            transform: rotateY(360deg);
+        }
+        #box9 img{
+            border-radius: 50px;
+            transition-delay: 1s;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover over the images</h1>
+    <table>
+        <tr>
+            <td id="box1"> <img src="./sandwich.jpg" alt="image"> </td>
+            <td id="box2"> <img src="./sandwich.jpg" alt="image" > </td>
+            <td id="box3"> <img src="./sandwich.jpg" alt="image"> </td>
+        </tr>
+        <tr>
+            <td id="box4"> <img src="./sandwich.jpg" alt="image"> </td>
+            <td id="box5"> <img src="./sandwich.jpg" alt="image"> </td>
+            <td id="box6"> <img src="./sandwich.jpg" alt="image"> </td>
+        </tr>
+        <tr>
+            <td id="box7"> <img src="./sandwich.jpg" alt="image"> </td>
+            <td id="box8"> <img src="./sandwich.jpg" alt="image"> </td>
+            <td id="box9"> <img src="./sandwich.jpg" alt="image"> </td>
+        </tr>
+
+    </table>
+</body>
+</html>

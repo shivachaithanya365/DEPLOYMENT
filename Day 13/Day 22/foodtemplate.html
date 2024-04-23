@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food-Template</title>
+  <!-- fafa bars -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>
+    /* -----------------header---------------------------*/
+    div.header {
+      position: relative;
+      background-color: white;
+      width: 1070px;
+      height: 50px;
+      left: 210px;
+      top: 0px;
+      position: fixed;
+      z-index: 1;
+    }
+
+    .fa-bars {
+      /* background-color: blue; */
+      font-size: 18px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+    }
+
+    ul.header {
+      /* background-color: rgb(216, 71, 71); */
+      list-style-type: none;
+      position: absolute;
+      top: -8px;
+      font-size: 20px;
+    }
+
+    li.one {
+      color: rgb(0, 0, 0);
+      /* background-color: blanchedalmond; */
+      margin-left: 430px;
+      display: inline;
+    }
+
+    li.two {
+      color: rgb(0, 0, 0);
+      /* background-color: rgb(242, 175, 74); */
+      margin-left: 480px;
+      display: inline;
+    }
+
+    /* -----------------middle---------------------------*/
+
+    div.container {
+      position: relative;
+      /* background-color: rgb(203, 146, 146); */
+      width: 1030px;
+      height: 970px;
+      left: 230px;
+      top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: start;
+      justify-content: start;
+    }
+
+    div.container img {
+      width: 235px;
+      height: 350px;
+      margin: 0px 22px 150px 0px;
+    }
+
+    div.top1 {
+      position: absolute;
+      top: 330px;
+      left: 0px;
+      padding: 10px;
+      text-align: center;
+      font-size: 13.5px;
+
+    }
+
+    div.top2 {
+      position: absolute;
+      top: 330px;
+      left: 250px;
+      padding: 10px;
+      text-align: center;
+      font-size: 13.5px;
+    }
+
+    div.top3 {
+      position: absolute;
+      top: 330px;
+      left: 510px;
+      padding: 10px;
+      text-align: center;
+      font-size: 13.5px;
+    }
+
+    div.top4 {
+      position: absolute;
+      top: 330px;
+      left: 770px;
+      padding: 10px;
+      text-align: center;
+      font-size: 13.5px;
+    }
+
+    div.top5 {
+      position: absolute;
+      top: 830px;
+      left: 250px;
+      padding: 10px;
+      text-align: center;
+      font-size: 13.5px;
+    }
+
+    div.top6 {
+      position: absolute;
+      top: 830px;
+      left: 510px;
+      padding: 10px;
+      text-align: center;
+      font-size: 13.5px;
+    }
+
+    div.top7 {
+      position: absolute;
+      top: 830px;
+      left: 765px;
+      padding: 10px;
+      text-align: center;
+      font-size: 13.5px;
+    }
+
+    div.top8 {
+      position: absolute;
+      top: 830px;
+      left: 0px;
+      padding: 10px;
+      text-align: center;
+      font-size: 13.5px;
+    }
+
+    /* -----------------below---------------------------*/
+
+    ul.below {
+      list-style-type: none;
+      display: inline-block;
+      width: 270px;
+      /* background-color: aqua; */
+      margin-top: 80px;
+      margin-left: 560px;
+    }
+
+    ul.below li {
+      display: inline-block;
+      padding: 15px;
+    }
+
+    ul.below li:hover {
+      color: white;
+      background-color: black;
+    }
+
+    /* -----------------footer---------------------------*/
+
+    footer {
+      /* background-color: rgb(223, 123, 123); */
+      width: 1040px;
+      height: 300px;
+      position: relative;
+      left: 230px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    div.f1 {
+      /* background-color: aqua; */
+      position: absolute;
+      top: 20px;
+    }
+
+    div.f2 {
+      /* background-color: aqua; */
+      position: absolute;
+      top: 20px;
+      left: 350px;
+      width: 325px;
+    }
+
+    div.f3 {
+      /* background-color: aqua; */
+      position: absolute;
+      top: 20px;
+      left: 680px;
+      width: 340px;
+      height: 200px;
+    }
+
+    div.f2 img {
+      padding: 10px;
+      position: relative;
+    }
+
+    p.lorem1 {
+      display: inline-block;
+      position: absolute;
+    }
+
+    p.lorem2 {
+      display: inline-block;
+      position: absolute;
+
+    }
+
+    div.f3 p {
+      color: white;
+      background-color: gray;
+      display: inline;
+      padding: 1.7px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header with Icon and Navigation -->
+  <div class="header">
+    <ul class="header">
+      <li><i class="fas fa-bars"></i></li>
+      <li class="one">My Food</li>
+      <li class="two">Mail</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <img src="./sandwich.jpg" />
+    <div class="top1">
+      <h2>The Perfect Sandwich, A <br />Real NYC Classic</h2>
+      <p class="lorem">
+        Just some random text,lorem ipsum text <br />praesent tincidunt ipsum
+        lipsum.
+      </p>
+    </div>
+
+    <img src="./steak.jpg" />
+    <div class="top2">
+      <h2>Let Me Tell You About <br />This Steak</h2>
+      <p class="lorem">
+        Once again, some random text to lorem <br />praesent tincidunt ipsum
+        lipsum.
+      </p>
+    </div>
+
+    <img src="./cherries.jpg" />
+    <div class="top3">
+      <h2>The Perfect Sandwich, A <br />Real NYC Classic</h2>
+      <p class="lorem">
+        Just some random text,lorem ipsum <br />praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+    <img src="./wine.jpg" />
+    <div class="top4">
+      <h2>The Perfect Sandwich, A <br />Real NYC Classic</h2>
+      <p class="lorem">
+        Just some random text,lorem ipsum <br />praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+    <img src="./croissant.jpg" />
+    <div class="top5">
+      <h2>The Perfect Sandwich, A <br />Real NYC Classic</h2>
+      <p class="lorem">
+        Just some random text,lorem ipsum text <br />praesent tincidunt ipsum
+        lipsum.</p>
+    </div>
+
+    <img src="./sandwich (1).jpg" />
+    <div class="top6">
+      <h2>Let Me Tell You About <br />This Steak</h2>
+      <p class="lorem">
+        Once again, some random text to lorem <br />praesent tincidunt ipsum
+        lipsum.</p>
+    </div>
+
+    <img src="./steak.jpg" />
+    <div class="top7">
+      <h2>The Perfect Sandwich, A <br />Real NYC Classic</h2>
+      <p class="lorem">
+        Just some random text,lorem ipsum <br />praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+    <img src="./wine.jpg" />
+    <div class="top8">
+      <h2>The Perfect Sandwich, A <br />Real NYC Classic</h2>
+      <p class="lorem">
+        Just some random text,lorem ipsum <br />praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+  <!-- Pagination -->
+  <ul class="below">
+    <li>&lt;&lt;</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>&gt;&gt;</li>
+  </ul>
+  <hr style="width: 1030px; margin-left: 230px;;">
+
+  <!-- About Me Section -->
+  <p style="text-align: center; margin-top: 60px; margin-bottom: 30px;">About Me, The Food Man</p>
+
+  <!-- Centered Image -->
+  <div style="text-align: center;">
+    <img src="./chef.jpg" alt="chef" style="width: 700px; height: 450px;" />
+  </div>
+
+  <p style="text-align: center; padding: 35px 0 0;"><b>I am Who I Am!</b></p>
+  <p style="text-align: center; padding: 5px 0;">With Passion For Real, Good Food</p>
+  <p style="text-align: center; padding-bottom: 85px; margin-left: 230px; margin-right: 230px;">Just me, myself and I,
+    exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam
+    blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta
+    lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+    condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+  <hr style="width: 1030px; margin-left: 230px;;">
+  <!-- Footer Section -->
+
+  <footer class="footer">
+    <div class="f1">
+      <h2>FOOTER</h2>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo <br>condimentum, porta lectus vitae, ultricies congue
+        <br> gravida diam non fringilla.
+      </p>
+      <p>Powered by w3.css</p>
+    </div>
+    <div class="f2">
+      <h2>BLOG POSTS</h2>
+      <img src="workshop1.jpg" alt="Workshop 1" width="50px" height="50px">
+      <p class="lorem1">Lorem</p><br>
+      <p class="lorem1" style="top: 90px; left: 70px;">Sed mattis nunc</p>
+      <hr>
+      <img src="workshop2.jpg" alt="Workshop 2" width="50px" height="50px">
+      <p class="lorem2">Ipsum</p><br>
+      <p class="lorem2" style="top: 182px; left: 70px;">Praes tinci sed</p>
+    </div>
+    <div class="f3">
+      <h2>POPULAR TAGS</h2>
+      <p style="background-color: black;">New york</p>
+      <p>Summer</p>
+      <p>Dinner</p>
+      <p>Shop</p>
+      <p>Contact</p>
+      <p>usa</p>
+      <p>Travel</p>
+      <p>India</p>
+      <p>Sri lqnkq</p>
+      <p>Russia</p>
+      <p>China</p>
+      <p>India</p>
+      <p>New york</p>
+      <p>Summer</p>
+      <p>Dinner</p>
+
+    </div>
+  </footer>
+  </div>
+
+</body>
+
+</html>
